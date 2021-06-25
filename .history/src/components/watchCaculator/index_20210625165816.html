@@ -1,0 +1,18 @@
+<div class="watchCaculator">
+    <div class="result"><span :class="{'has-color':hasColor}">{{screenNumber || '*88888888888'}}</span></div>
+    <div class="numbers">
+        <div class="number btn" v-for='number in numbers' key = "number" @Click="chooseNumber(number)"><span>{{number}}</span><div></div></div>
+    </div>
+    <div class="sym">
+        <div class="clear btn" @Click="clear"><span>c</span><div></div></div>
+        <div class="plus btn" @Click="sym('plus')"><span>+</span><div></div></div>
+        <div class="minus btn" @Click="sym('minus')"><span>-</span><div></div></div>
+        <div class="multy btn" @Click="sym('multy')"><span>x</span><div></div></div>
+        <div class="divide btn" @Click="sym('divide')"><span>÷</span><div></div></div>
+    </div>
+    <div class="other">
+        <div class="zero btn"><span>0</span><div></div></div>
+        <div class="dot btn"><span>.</span><div></div></div>
+        <div class="dengyu btn" @Click="dengyu"><span>=</span><div></div></div>
+    </div>
+</div>

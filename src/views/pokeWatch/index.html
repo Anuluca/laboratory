@@ -1,0 +1,22 @@
+<div class="poke-watch">
+  <div class="out-box" :class="nowType">
+    <div class="black-plas">
+      <div class="top-black" :class="{ 'close-black': ifCloseAnim }"></div>
+      <div class="screen">
+        <div v-if="nowPageNum == 1" class="page-one"><watchDigitalTime/></div>
+        <div v-else-if="nowPageNum == 2" class="page-two">
+            <watchCaculator/>
+        </div>
+      </div>
+      <div class="bottom-black" :class="{ 'close-black': ifCloseAnim }"></div>
+    </div>
+    <div class="button-back">
+      <div class="button" @Click="changePage('Next')"></div>
+    </div>
+  </div>
+  <div style="margin-top:100px">
+    <div @Click="changeType('blue-type')">切换到蓝色款</div>
+    <div @Click="changeType('red-type')">切换到红色款</div>
+    <div @Click="changeType('orange-type')">切换到橙色款</div>
+  </div>
+</div>
