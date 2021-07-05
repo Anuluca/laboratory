@@ -3,13 +3,13 @@
     <div class="black-plas">
       <div class="top-black" :class="{ 'close-black': ifCloseAnim }"></div>
       <div class="screen">
-        <div v-if="nowPageNum == 1" class="page-one"><watchDigitalTime /></div>
+        <div v-if="nowPageNum == 1" class="page-one"><watchDigitalTime/></div>
         <div v-else-if="nowPageNum == 2" class="page-two">
-          <watchCaculator />
+            <watchCaculator/>
         </div>
         <div v-else-if="nowPageNum == 3" class="page-three">
-          <watchKokinggu />
-        </div>
+          <watchKokinggu/>
+      </div>
       </div>
       <div class="bottom-black" :class="{ 'close-black': ifCloseAnim }"></div>
     </div>

@@ -1,0 +1,33 @@
+.watch-kokinggu {
+  .coin {
+    width: 100px;
+    height: 80px;
+    border: 5px solid #395426;
+    margin: 180px auto;
+    cursor: pointer;
+  }
+  .on-animation {
+    animation: roll 8s linear infinite;
+  }
+  @keyframes dropdown {
+    0% {
+      margin-top: 0px;
+    }
+    /** 暂停效果 */
+    10% {
+      margin-top: 0px;
+    }
+    50% {
+      margin-top: -100px;
+    }
+    60% {
+      margin-top: -100px;
+    }
+    90% {
+      margin-top: -200px;
+    }
+    100% {
+      margin-top: -200px;
+    }
+  }
+}
