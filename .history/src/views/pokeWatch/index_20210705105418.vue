@@ -4,20 +4,19 @@
 import { defineComponent, reactive, ref, toRefs, onMounted } from "vue";
 import watchDigitalTime from "@/components/watchDigitalTime/index.vue";
 import watchCaculator from "@/components/watchCaculator/index.vue";
-import watchKokinggu from "@/components/watchKokinggu/index.vue";
+import watchKokinggu from "@/components/watchCaculator/index.vue";
 
 export default defineComponent({
   name: "pokeWatch",
   components: {
     watchDigitalTime,
-    watchCaculator,
-    watchKokinggu
+    watchCaculator
   },
   setup() {
     const data = reactive({
       ifCloseAnim: false,
       nowPageNum: 1,
-      pageMax: 3,
+      pageMax: 2,
       nowType: "red-type",
 
       //翻页

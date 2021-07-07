@@ -17,7 +17,7 @@ export default defineComponent({
     const data = reactive({
       ifCloseAnim: false,
       nowPageNum: 1,
-      pageMax: 3,
+      pageMax: 2,
       nowType: "red-type",
 
       //翻页

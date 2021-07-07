@@ -10,14 +10,13 @@ export default defineComponent({
   name: "pokeWatch",
   components: {
     watchDigitalTime,
-    watchCaculator,
-    watchKokinggu
+    watchCaculator
   },
   setup() {
     const data = reactive({
       ifCloseAnim: false,
       nowPageNum: 1,
-      pageMax: 3,
+      pageMax: 2,
       nowType: "red-type",
 
       //翻页
