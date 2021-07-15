@@ -65,7 +65,7 @@
 }
 .main-page {
   width: calc(100% - 336px);
-  height: 100vh;
+  height: calc(100vh - 62px);
   float: right;
   overflow:scroll;
   margin-top:20px
